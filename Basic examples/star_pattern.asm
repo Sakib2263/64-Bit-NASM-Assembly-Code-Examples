@@ -21,11 +21,11 @@ space: dq 0
 stars: dq 0
 
 segment .text
-global main
+global _start
 extern printf
 extern scanf
 
-main:
+_start:
 push RBP
 
 mov RAX, 0
